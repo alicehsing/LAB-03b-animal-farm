@@ -8,20 +8,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/styles.css">
-    <title>My App</title>
+    <title></title>
 </head>
 
 <body>
     <header>
-        <h1>My App</h1>
+        <h1>Animal Sound Lab</h1>
         <img src="assets/big-logo.png" />
     </header>
-    
-    <main>
 
-        Make a Web App!
-        
+    <main>
+        <p>What Sound Do I Make? &#8594; Click Me!</p>
+        <section id="images">
+            <img class="animal-image" id="cat-image"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtckjGinp1XirXhQQU_i9C99riTYSxDipJ7Q&usqp=CAU"
+                alt="hello kitty">
+
+
+            <img class="animal-image" id="dog-image"
+                src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12224438/Shetland-Sheepdog-On-White-01.jpg"
+                alt="sheltie-smiling">
+
+            <img class="animal-image" id="horse-image"
+                src="https://www.scienceabc.com/wp-content/uploads/2016/05/horse-running.jpg" alt="horse-running">
+        </section>
     </main>
+
+    <audio id="cat-sound" src="assets/cat.wav"></audio>
+    <audio id="dog-sound" src="assets/dog.wav"></audio>
+    <audio id="horse-sound" src="assets/horse.wav"></audio>
 
     <footer>
         &copy; 2021 Alchemy Code Lab

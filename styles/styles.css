@@ -8,7 +8,15 @@ body {
 
 main {
     padding: 30px;
+    background-color: #ffddd2;        
 }
+
+p {
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 40px;
+}
+
 
 header {
     background-color: #A2D7D2;
@@ -32,4 +40,28 @@ h1 {
 footer {
     background-color: #FAF0EA;
     padding: 10px;
+}
+
+
+#images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 40px;   
+
+}
+
+.animal-image {
+    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+    box-shadow: 3px 3px 5px black;
+    cursor: pointer;   
+    transition: all 300ms ease-in-out;
+    
+}
+
+.animal-image:hover {
+    transform: scale(1.03);
+    box-shadow: 4px 4px 15px #14213d;
 }
