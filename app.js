@@ -29,6 +29,11 @@ dogImage.addEventListener('click', () => {
 const horseImage = document.getElementById('horse-image');
 const horseSound = document.getElementById('horse-sound');
 
+let horseClicks = 0;
+
 horseImage.addEventListener('click', () => {
     horseSound.play();
+    horseClicks = horseClicks + 1;
+    console.log('horse clicks is now', horseClicks);
+
 });
